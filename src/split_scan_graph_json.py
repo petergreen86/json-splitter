@@ -9,7 +9,7 @@ from warnings import catch_warnings
 from sys import argv
 
 def load_json_file(filename):
-    with open(filename) as f:
+    with open(filename, encoding='utf-8') as f:
         data = json.load(f)
     return data
 
